@@ -1,0 +1,35 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fcfcfc; /* Near white background */
+  color: #292524; /* Stone 800 for text */
+}
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 48rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+  height: 24rem;
+  max-height: 400px;
+}
+@media (max-width: 640px) {
+  .chart-container {
+    height: 20rem;
+  }
+}
+.nav-link {
+  transition: color 0.3s, background-color 0.3s;
+}
+.nav-link:hover {
+  color: #166534;
+}
+.active-stakeholder {
+  background-color: #166534 !important; /* Green 800 */
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(22, 101, 52, 0.4);
+  transform: scale(1.02);
+}
+.flow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
